@@ -1,4 +1,3 @@
-
 * 0 http://altexplorer.net/block/69053cce7b4f59463bafc58f5bb0291b9ce0892947c1aadbb1162767c00ec3eb http://p2-pool.eu:9022/static/share.html#69053cce7b4f59463bafc58f5bb0291b9ce0892947c1aadbb1162767c00ec3eb
 * 1 http://altexplorer.net/block/c2bff12687eb07c3a805ff7d3a4af34436da91feab1cc27e6edabdd387824cc5 http://p2-pool.eu:9022/static/share.html#c2bff12687eb07c3a805ff7d3a4af34436da91feab1cc27e6edabdd387824cc5
 * 2 http://altexplorer.net/block/58d8657a9020fe5d3a56afb9b1f28cc4e4df9174a3c68ec1f62e85302bc9fc4a http://p2-pool.eu:9022/static/share.html#58d8657a9020fe5d3a56afb9b1f28cc4e4df9174a3c68ec1f62e85302bc9fc4a
