@@ -1,6 +1,7 @@
 from http://p2-pool.eu:9022/recent_blocks
 
 total : 217 block
+
 orphan : 118 block
 
 
