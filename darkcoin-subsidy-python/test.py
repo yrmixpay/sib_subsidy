@@ -12,4 +12,3 @@ print 'height 22047 diff 647.32 reward 17 nBits 459619746'
 print darkcoin_subsidy.GetBlockBaseValue(459619746, 22047)
 print 'height 22247 diff 554.55 reward 18 nBits 460729732'
 print darkcoin_subsidy.GetBlockBaseValue(460729732, 22247)
-

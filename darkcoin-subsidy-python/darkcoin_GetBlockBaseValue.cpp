@@ -6,28 +6,36 @@
 
 static const int64_t COIN = 100000000;
 
-int64_t static GetBlockBaseValue(int nBits, int nHeight)
+double ConvertBitsToDouble(unsigned int nBits)
 {
     int nShift = (nBits >> 24) & 0xff;
 
     double dDiff =
         (double)0x0000ffff / (double)(nBits & 0x00ffffff);
 
-    /* fixed bug caused diff to not be correctly calculated */
-    if(nHeight > 4500) {
-        while (nShift < 29)
-        {
-            dDiff *= 256.0;
-            nShift++;
-        }
-        while (nShift > 29)
-        {
-            dDiff /= 256.0;
-            nShift--;
-        }
+    while (nShift < 29)
+    {
+        dDiff *= 256.0;
+        nShift++;
+    }
+    while (nShift > 29)
+    {
+        dDiff /= 256.0;
+        nShift--;
     }
 
-    int64_t nSubsidy = 0;
+    return dDiff;
+}
+
+int64_t static GetBlockBaseValue(int nBits, int nHeight)
+{
+    double dDiff =
+        (double)0x0000ffff / (double)(nBits & 0x00ffffff);
+
+    /* fixed bug caused diff to not be correctly calculated */
+    if(nHeight > 4500) dDiff = ConvertBitsToDouble(nBits);
+
+    int64_t nSubsidy = 0; 
     if(nHeight >= 5465) {
         if((nHeight >= 17000 && dDiff > 75) || nHeight >= 24000) { // GPU/ASIC difficulty calc
             // 2222222/(((x+2600)/9)^2)
@@ -45,12 +53,12 @@ int64_t static GetBlockBaseValue(int nBits, int nHeight)
         if (nSubsidy < 1) nSubsidy = 1;
     }
 
-    //printf("nBits %u height %u diff %4.2f reward %i \n", nBits, nHeight, dDiff, nSubsidy);
-
+    //printf("height %u diff %4.2f reward %i \n", nHeight, dDiff, nSubsidy);
     nSubsidy *= COIN;
 
-    return nSubsidy ;
+    return nSubsidy;
 }
+
 
 #include <boost/python/module.hpp>
 #include <boost/python/def.hpp>
