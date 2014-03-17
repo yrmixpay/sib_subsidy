@@ -4,8 +4,12 @@ darkcoin-subsidy-python
 Python module for p2poll-drk SUBSIDY_FUNC
 
 
-- need boost-devel 
+Ubuntu 12.04.4 LTS
+apt-get install libboost1.48-all-dev python-dev
 
+Suse
+
+zypper in gcc-c++ boost-devel python-devel
 
 
 *  https://github.com/Rav3nPL/p2pool-rav/pull/21#issuecomment-33456471
