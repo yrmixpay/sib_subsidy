@@ -1,7 +1,7 @@
 darkcoin-subsidy-python
 =====================
 
-Python module for p2poll-drk SUBSIDY_FUNC
+Python module for p2pool-drk SUBSIDY_FUNC
 
 
 Ubuntu 12.04.4 LTS
