@@ -1,8 +1,8 @@
-from distutils.core import setup
-from distutils.extension import Extension
+from distutils.core import setup, Extension
 
-setup(name="darkcoin_subsidys",
-    ext_modules=[
-        Extension("darkcoin_subsidy", ["darkcoin_GetBlockBaseValue.cpp"],
-        libraries = ["boost_python"])
-    ])
+darkcoin_module = Extension('darkcoin_subsidy', sources = ['darkcoin_subsidy.cpp'])
+
+setup (name = 'darkcoin_subsidy',
+       version = '1.0',
+       description = 'Subsidy function for DarkCoin',
+       ext_modules = [darkcoin_module])
