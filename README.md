@@ -16,6 +16,11 @@ Python 2.7 is required as well as a gcc with c++ bindings.
 
     $ sudo python2 setup.py install
 
+Or use pip:
+
+    $ pip install darkcoin_subsidy
+
+[pypi.python.org/pypi/darkcoin_subsidy](https://pypi.python.org/pypi/darkcoin_subsidy)
 
 Usage
 -----
