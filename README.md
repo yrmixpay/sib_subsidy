@@ -1,4 +1,4 @@
-darkcoin_subsidy (python) v1.1
+darkcoin_subsidy (python) v1.2
 ==============================
 
 Python module for Darkcoin's subsidy function.
