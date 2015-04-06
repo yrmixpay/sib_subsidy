@@ -1,11 +1,11 @@
-darkcoin_subsidy (python) v1.2
+dash_subsidy (python) v1.2
 ==============================
 
-Python module for Darkcoin's subsidy function.
+Python module for Dash's subsidy function.
 
 Currently to be used for:
 
-* p2pool-drk (SUBSIDY_FUNC)
+* p2pool-dash (SUBSIDY_FUNC)
 * darkcoind-ncurses (block_subsidy)
 
 
@@ -14,13 +14,8 @@ Install
 
 Python 2.7 is required as well as a gcc with c++ bindings.
 
-    $ sudo python2 setup.py install
+    $ sudo python setup.py install
 
-Or use pip:
-
-    $ pip install darkcoin_subsidy
-
-[pypi.python.org/pypi/darkcoin_subsidy](https://pypi.python.org/pypi/darkcoin_subsidy)
 
 Usage
 -----
@@ -44,3 +39,4 @@ Credits
 * Module written by @chaeplin https://github.com/chaeplin/SUBSIDY_FUNC
 * Module maintained by @dstorm https://bitbucket.org/dstorm/p2pool-drk
 * Module maintained by @vertoe https://github.com/vertoe/darkcoin_subsidy
+* Module maintained by @jakehaas https://github.com/jakehaas/dash_subsidy
