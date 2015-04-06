@@ -1,8 +1,8 @@
 from distutils.core import setup, Extension
 
-darkcoin_subsidy_module = Extension('darkcoin_subsidy', sources = ['darkcoin_subsidy.cpp'])
+dash_subsidy_module = Extension('dash_subsidy', sources = ['dash_subsidy.cpp'])
 
-setup (name = 'darkcoin_subsidy',
+setup (name = 'dash_subsidy',
        version = '1.2',
-       description = 'Subsidy function for Darkcoin',
-       ext_modules = [darkcoin_subsidy_module])
+       description = 'Subsidy function for Dash',
+       ext_modules = [dash_subsidy_module])
