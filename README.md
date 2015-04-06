@@ -1,4 +1,4 @@
-dash_subsidy (python) v1.2
+dash_subsidy (v1.3)
 ==============================
 
 Python module for Dash's subsidy function.
@@ -14,7 +14,7 @@ Install
 
 Python 2.7 is required as well as a gcc with c++ bindings.
 
-    $ sudo python setup.py install
+    $ python setup.py install
 
 
 Usage
@@ -22,7 +22,7 @@ Usage
 
 Import the module and call the function:
 
-    import darkcoin_subsidy as ds
+    import dash_subsidy as ds
 
     nBits = 469894998
     nHeight = 21288
