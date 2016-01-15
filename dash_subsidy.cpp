@@ -58,6 +58,13 @@ long long static GetBlockBaseValue(int nBits, int nHeight, bool fTestNet = false
         for(int i = 210240; i <= nHeight; i += 210240) nSubsidy -= nSubsidy/14;
     }
 
+	/* Hard fork will activate on block 328008, reducing the block reward by 10 extra percent (allowing budget super-blocks) */
+    if(fTestNet){
+        if (nHeight > 77900+576) nSubsidy -= nSubsidy/10;
+    } else {
+        if (nHeight > 309759+(553*33)) nSubsidy -= nSubsidy/10; // 328008 - 10.0% - September 6, 2015
+    }
+
     return nSubsidy;
 }
 
