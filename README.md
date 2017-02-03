@@ -1,12 +1,12 @@
-dash_subsidy (v1.3)
+sib_subsidy (v1.3)
 ==============================
 
-Python module for Dash's subsidy function.
+Python module for Sibcoin's subsidy function.
 
 Currently to be used for:
 
-* p2pool-dash (SUBSIDY_FUNC)
-* darkcoind-ncurses (block_subsidy)
+* p2pool-sib (SUBSIDY_FUNC)
+* sibcoind-ncurses (block_subsidy)
 
 
 Install
@@ -22,7 +22,7 @@ Usage
 
 Import the module and call the function:
 
-    import dash_subsidy as ds
+    import sib_subsidy as ds
 
     nBits = 469894998
     nHeight = 21288
@@ -40,3 +40,4 @@ Credits
 * Module maintained by @dstorm https://bitbucket.org/dstorm/p2pool-drk
 * Module maintained by @vertoe https://github.com/vertoe/darkcoin_subsidy
 * Module maintained by @jakehaas https://github.com/jakehaas/dash_subsidy
+* Module maintained by @ivansib https://github.com/ivansib/sib_subsidy
