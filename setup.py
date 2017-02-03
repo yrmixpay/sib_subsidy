@@ -1,8 +1,8 @@
 from distutils.core import setup, Extension
 
-dash_subsidy_module = Extension('dash_subsidy', sources = ['dash_subsidy.cpp'])
+sib_subsidy_module = Extension('sib_subsidy', sources = ['dash_subsidy.cpp'])
 
-setup (name = 'dash_subsidy',
+setup (name = 'sib_subsidy',
        version = '1.3',
-       description = 'Subsidy function for Dash',
-       ext_modules = [dash_subsidy_module])
+       description = 'Subsidy function for Sibcoin',
+       ext_modules = [sib_subsidy_module])
